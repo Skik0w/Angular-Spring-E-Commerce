@@ -21,3 +21,7 @@ npm install --location=global @angular/cli@19.2.1
 
 Aby utworzyć nowy projekt Angular o nazwie `my-angular-app` bez trybu standalone, użyj:  
 ng new --no-standalone my-angular-app  
+
+Aby uruchomić serwer deweloperski Angular i podglądać projekt na `localhost:4200`, użyj:  
+cd my-angular-app  
+ng serve  

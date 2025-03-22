@@ -93,6 +93,12 @@ npm install bootstrap@5.3.3
 npm install @fortawesome/fontawesome-free
 ```
 
+### 📦 Instalacja ng-bootstrap:
+
+```
+npm install @ng-bootstrap/ng-bootstrap@18.0.0
+```
+
 ## 🌍 Dodanie lokalizacji Angular:
 
 ```

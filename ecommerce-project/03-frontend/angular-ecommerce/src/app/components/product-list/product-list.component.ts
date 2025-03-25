@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { Product } from '../../common/product';
 import { ActivatedRoute } from '@angular/router';
+import {CartItem} from '../../common/cart-item';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-product-list',
@@ -25,8 +27,10 @@ export class ProductListComponent implements OnInit{
 
   previousKeyword: string = ""
 
-  constructor(private productService: ProductService, 
-                      private route: ActivatedRoute) { }
+  constructor(private productService: ProductService,
+              private cartService: CartService,
+              private route: ActivatedRoute
+              ) {}
 
   ngOnInit(): void{
     this.route.paramMap.subscribe(() => {
@@ -43,7 +47,7 @@ export class ProductListComponent implements OnInit{
       this.handleSearchProducts();
     }
     else{
-      this.handleListProcucts();
+      this.handleListProducts();
     }
   }
 
@@ -68,7 +72,7 @@ export class ProductListComponent implements OnInit{
                                                theKeyword).subscribe(this.processResult());
   }
 
-  handleListProcucts() {
+  handleListProducts() {
 
     // check if "id" parameter is available
     const hasCategoryId: boolean = this.route.snapshot.paramMap.has('id');
@@ -76,7 +80,7 @@ export class ProductListComponent implements OnInit{
     if (hasCategoryId) {
       // get the "id" param string. convert string to a number using the "+" symbol
       this.currentCategoryId = +this.route.snapshot.paramMap.get('id')!;
-  
+
       // get the "name" param string
       this.currentCategoryName = this.route.snapshot.paramMap.get('name')!;
     }
@@ -91,7 +95,7 @@ export class ProductListComponent implements OnInit{
     // Note: Angular will reuse a component if it is currently being viewed
     //
 
-    // if we have a different catefory id than previous
+    // if we have a different category id than previous
     // then set thePageNumber back to 1
     if (this.previousCategoryId != this.currentCategoryId) {
       this.thePageNumber = 1;
@@ -129,6 +133,19 @@ export class ProductListComponent implements OnInit{
       this.thePageSize = data.page.size;
       this.theTotalElements = data.page.totalElements;
     };
+  }
+
+  addToCart(theProduct: Product) {
+    console.log(`Adding to cart: ${theProduct.name}, ${theProduct.unitPrice}`);
+
+    // TODO ... do real work
+    const theCartItem = new CartItem(
+      theProduct.id!,
+      theProduct.name!,
+      theProduct.imageUrl!,
+      theProduct.unitPrice!
+    );
+    this.cartService.addToCart(theCartItem);
   }
 
 }

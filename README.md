@@ -1,6 +1,3 @@
-📌 **Angular + Spring Boot – Kurs** 🚀
-Kompleksowa instrukcja instalacji i konfiguracji Angular oraz TypeScript.
-
 ## ⚙️ Instalacja i konfiguracja TypeScript
 ### 🛠️ Inicjalizacja TypeScript i utworzenie pliku tsconfig.json:
 

@@ -1,107 +1,135 @@
-## ⚙️ Instalacja i konfiguracja TypeScript
-### 🛠️ Inicjalizacja TypeScript i utworzenie pliku tsconfig.json:
+# E-Commerce Angular + Spring Boot
 
+## Project Description
+An e-commerce application using Angular (frontend) and Spring Boot (backend). The project enables users to browse products, manage their cart, and complete orders. It also includes user authentication via Okta.
+
+## Features
+- Product listing with category-based browsing
+- Product details page
+- Product search functionality
+- Shopping cart management
+- Checkout and order placement
+- User authentication and registration
+- Member-only access pages
+
+## Technologies
+
+### Frontend
+- Angular
+- TypeScript
+- Bootstrap (ng-bootstrap)
+- Okta (Authentication)
+- Angular Reactive Forms
+
+### Backend
+- Spring Boot
+- Spring REST API
+- Java
+- Maven
+
+## Installation and Setup
+
+### Prerequisites
+- Node.js and npm
+- Angular CLI
+- Java JDK 21+
+- Maven
+
+This setup ensures a fully functional Angular and Spring Boot-based e-commerce application.
+
+# TypeScript and Angular Setup
+
+## Installing and Configuring TypeScript
+
+### Initializing TypeScript and Creating tsconfig.json
 ```
-tsc --init
+tscc --init
 ```
 
-### ⚡ Kompilacja pliku .ts do JavaScript (ES5), bez generowania pliku w przypadku błędów:
-
+### Compiling a TypeScript File to JavaScript (ES5) Without Generating Output on Errors
 ```
-tsc --target ES5 --noEmitOnError plik.ts
+tsc --target ES5 --noEmitOnError file.ts
 ```
 
-### 🗑️ Czyszczenie builda (usuwanie wygenerowanych plików):
-
+### Cleaning the Build (Removing Generated Files)
 ```
 tsc --build --clean
 ```
 
-### 🚀 Kompilacja i uruchomienie skryptu TypeScript w Node.js:
-
+### Compiling and Running a TypeScript File in Node.js
 ```
-tsc plik.ts
-node plik.js
+tsc file.ts
+node file.js
 ```
 
-## 🌍 Instalacja Angular CLI
-### 📦 Instalacja Angular CLI w określonej wersji (globalnie na komputerze):
+## Installing Angular CLI
 
+### Installing Angular CLI (Global Installation, Specific Version)
 ```
 npm install --location=global @angular/cli@19.2.1
 ```
 
-### 📌 Sprawdzenie poprawnej instalacji Angular CLI:
-
+### Verifying Angular CLI Installation
 ```
 ng version
 ```
 
-## 🏗️ Tworzenie nowego projektu Angular
-### 📂 Tworzenie projektu Angular o nazwie nazwa-projektu (bez trybu standalone):
+## Creating a New Angular Project
 
+### Creating a New Angular Project (Without Standalone Mode)
 ```
-ng new --no-standalone nazwa-projektu
-```
-
-### 📂 Przejście do katalogu projektu:
-
-```
-cd nazwa-projektu
+ng new --no-standalone project-name
 ```
 
-## 🌐 Uruchamianie serwera Angular
-### 🚀 Uruchomienie serwera deweloperskiego Angular i podgląd na localhost:4200:
+### Navigating to the Project Directory
+```
+cd project-name
+```
 
+## Running Angular Development Server
+
+### Running the Angular Development Server (Accessible on localhost:4200)
 ```
 ng serve
 ```
 
-### 🌍 Uruchomienie Angular z automatycznym otwarciem przeglądarki:
-
+### Running Angular with Auto-Opening in Browser
 ```
 ng serve --open
 ```
 
-## 🛠️ Generowanie elementów w Angular
-### 📌 Generowanie nowego komponentu:
+## Generating Components and Classes in Angular
 
+### Generating a New Component
 ```
-ng generate component nazwa-komponentu
-```
-
-### 📌 Generowanie nowej klasy w określonym katalogu:
-
-```
-ng generate class katalog/nazwa-klasy
+ng generate component component-name
 ```
 
-## 🌟 Dodanie Bootstrap i FontAwesome do projektu Angular
+### Generating a New Class in a Specific Directory
+```
+ng generate class directory/class-name
+```
 
-### 📦 Instalacja Bootstrap 5.3.3:
+## Adding Bootstrap and FontAwesome to Angular Project
 
+### Installing Bootstrap 5.3.3
 ```
 npm install bootstrap@5.3.3
 ```
 
-### 📦 Instalacja FontAwesome:
-
+### Installing FontAwesome
 ```
 npm install @fortawesome/fontawesome-free
 ```
 
-### 📦 Instalacja ng-bootstrap:
-
+### Installing ng-bootstrap
 ```
 npm install @ng-bootstrap/ng-bootstrap@18.0.0
 ```
 
-## 🌍 Dodanie lokalizacji Angular:
-
+## Adding Angular Localization Support
 ```
 ng add @angular/localize
 ```
 
-💡 **Teraz Twój projekt Angular jest gotowy do działania!**
-🔗 Wejdź na http://localhost:4200/ i zobacz aplikację w akcji. 🎉
-
+---

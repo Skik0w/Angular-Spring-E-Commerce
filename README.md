@@ -1,7 +1,7 @@
 # E-Commerce Angular + Spring Boot
 
 ## Project Description
-An e-commerce application using Angular (frontend) and Spring Boot (backend). The project enables users to browse products, manage their cart, and complete orders. It also includes user authentication via Okta.
+An e-commerce application using Angular (frontend) and Spring Boot (backend). The project enables users to browse products, manage their cart, and complete orders.
 
 ## Features
 - Product listing with category-based browsing
@@ -18,7 +18,6 @@ An e-commerce application using Angular (frontend) and Spring Boot (backend). Th
 - Angular
 - TypeScript
 - Bootstrap (ng-bootstrap)
-- Okta (Authentication)
 - Angular Reactive Forms
 
 ### Backend

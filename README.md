@@ -37,31 +37,6 @@ An e-commerce application using Angular (frontend) and Spring Boot (backend). Th
 
 This setup ensures a fully functional Angular and Spring Boot-based e-commerce application.
 
-# TypeScript and Angular Setup
-
-## Installing and Configuring TypeScript
-
-### Initializing TypeScript and Creating tsconfig.json
-```
-tscc --init
-```
-
-### Compiling a TypeScript File to JavaScript (ES5) Without Generating Output on Errors
-```
-tsc --target ES5 --noEmitOnError file.ts
-```
-
-### Cleaning the Build (Removing Generated Files)
-```
-tsc --build --clean
-```
-
-### Compiling and Running a TypeScript File in Node.js
-```
-tsc file.ts
-node file.js
-```
-
 ## Installing Angular CLI
 
 ### Installing Angular CLI (Global Installation, Specific Version)

@@ -1,7 +1,7 @@
 # E-Commerce Angular + Spring Boot
 
 ## Project Description
-An e-commerce application using Angular (frontend) and Spring Boot (backend). The project enables users to browse products, manage their cart, and complete orders. It also includes user authentication via Okta.
+An e-commerce application using Angular (frontend) and Spring Boot (backend). The project enables users to browse products, manage their cart, and complete orders.
 
 ## Features
 - Product listing with category-based browsing
@@ -18,7 +18,6 @@ An e-commerce application using Angular (frontend) and Spring Boot (backend). Th
 - Angular
 - TypeScript
 - Bootstrap (ng-bootstrap)
-- Okta (Authentication)
 - Angular Reactive Forms
 
 ### Backend
@@ -36,31 +35,6 @@ An e-commerce application using Angular (frontend) and Spring Boot (backend). Th
 - Maven
 
 This setup ensures a fully functional Angular and Spring Boot-based e-commerce application.
-
-# TypeScript and Angular Setup
-
-## Installing and Configuring TypeScript
-
-### Initializing TypeScript and Creating tsconfig.json
-```
-tscc --init
-```
-
-### Compiling a TypeScript File to JavaScript (ES5) Without Generating Output on Errors
-```
-tsc --target ES5 --noEmitOnError file.ts
-```
-
-### Cleaning the Build (Removing Generated Files)
-```
-tsc --build --clean
-```
-
-### Compiling and Running a TypeScript File in Node.js
-```
-tsc file.ts
-node file.js
-```
 
 ## Installing Angular CLI
 

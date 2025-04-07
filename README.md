@@ -107,3 +107,5 @@ ng add @angular/localize
 ```
 
 ---
+
+This e-commerce project was initially developed as part of a course on building full-stack applications with Angular and Spring Boot. It has been further extended and customized by me to deepen my understanding of full-stack web development.

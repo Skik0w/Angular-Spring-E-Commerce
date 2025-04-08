@@ -56,6 +56,9 @@ npm install @ng-bootstrap/ng-bootstrap@18.0.0
 # Okta Sign-In Widget
 npm install @okta/okta-signin-widget@7.30.1
 
+# Okta Angular SDK
+npm install @okta/okta-angular@6.5.1
+
 # Angular Localization Support
 ng add @angular/localize
 ```

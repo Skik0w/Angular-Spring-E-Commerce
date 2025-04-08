@@ -72,7 +72,7 @@ ng serve
 ng serve --open
 ```
 
-## Generating Components and Classes in Angular
+## Generating Components, Classes, and Interfaces in Angular
 
 ### Generating a New Component
 ```
@@ -82,6 +82,11 @@ ng generate component component-name
 ### Generating a New Class in a Specific Directory
 ```
 ng generate class directory/class-name
+```
+
+### Generating a New Interface in a Specific Directory
+```
+ng generate interface directory/interface-name
 ```
 
 ## Adding Bootstrap and FontAwesome to Angular Project

@@ -36,16 +36,28 @@ An e-commerce application using Angular (frontend) and Spring Boot (backend). Th
 
 This setup ensures a fully functional Angular and Spring Boot-based e-commerce application.
 
-## Installing Angular CLI
+## Installing Frontend Dependencies
 
-### Installing Angular CLI (Global Installation, Specific Version)
-```
+Use the following commands to install all required frontend libraries:
+
+```bash
+# Angular CLI (specific version, global install)
 npm install --location=global @angular/cli@19.2.1
-```
 
-### Verifying Angular CLI Installation
-```
-ng version
+# Bootstrap 5
+npm install bootstrap@5.3.3
+
+# FontAwesome
+npm install @fortawesome/fontawesome-free
+
+# ng-bootstrap (Bootstrap components for Angular)
+npm install @ng-bootstrap/ng-bootstrap@18.0.0
+
+# Okta Sign-In Widget
+npm install @okta/okta-signin-widget@7.30.1
+
+# Angular Localization Support
+ng add @angular/localize
 ```
 
 ## Creating a New Angular Project
@@ -89,28 +101,7 @@ ng generate class directory/class-name
 ng generate interface directory/interface-name
 ```
 
-## Adding Bootstrap and FontAwesome to Angular Project
-
-### Installing Bootstrap 5.3.3
-```
-npm install bootstrap@5.3.3
-```
-
-### Installing FontAwesome
-```
-npm install @fortawesome/fontawesome-free
-```
-
-### Installing ng-bootstrap
-```
-npm install @ng-bootstrap/ng-bootstrap@18.0.0
-```
-
-## Adding Angular Localization Support
-```
-ng add @angular/localize
-```
-
 ---
 
 This e-commerce project was initially developed as part of a course on building full-stack applications with Angular and Spring Boot. It has been further extended and customized by me to deepen my understanding of full-stack web development.
+

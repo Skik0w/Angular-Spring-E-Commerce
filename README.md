@@ -120,7 +120,7 @@ ng generate interface directory/interface-name
 5. Add a user under Directory > People > Add Person
    - First Name: Bartek
    - Last Name: Testowy
-   - Email/Username: BarTest@mail.com
+   - Email/Username: BarTest@sample.com
    - Password: testUser@123 (set by admin)
 6. In your Angular project, install dependencies: okta-auth-js and okta-angular
 7. Add your Okta credentials (Client ID, Issuer, Redirect URI) to the app configuration

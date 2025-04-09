@@ -59,6 +59,9 @@ npm install @okta/okta-signin-widget@7.30.1
 # Okta Angular SDK
 npm install @okta/okta-angular@6.5.1
 
+# Okta Auth JS (core auth client)
+npm install @okta/okta-auth-js@7.11.3
+
 # Angular Localization Support
 ng add @angular/localize
 ```

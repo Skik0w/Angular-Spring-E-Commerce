@@ -106,6 +106,32 @@ ng generate interface directory/interface-name
 
 ---
 
+# Okta Login Configuration
+
+1. Create an account on Okta: https://developer.okta.com/signup
+2. Log in to the Okta Admin Console
+3. Go to Applications > Create App Integration
+   - Type: OIDC - OpenID Connect
+   - Application: Single Page Application
+   - Redirect URI: http://localhost:4200/login/callback
+   - Logout URI: http://localhost:4200
+   - Grant types: Authorization Code + PKCE
+4. Save the Client ID and Issuer URL
+5. Add a user under Directory > People > Add Person
+   - First Name: Bartek
+   - Last Name: Testowy
+   - Email/Username: BarTest@mail.com
+   - Password: testUser@123 (set by admin)
+6. In your Angular project, install dependencies: okta-auth-js and okta-angular
+7. Add your Okta credentials (Client ID, Issuer, Redirect URI) to the app configuration
+8. Add routes for /login and /login/callback
+9. Add a login and loginStatus component
+10. Run the app and test login with the user BarTest@mail.com
+
+**Login credentials:**
+- **Username:** BarTest@mail.com
+- **Password:** testUser@123
+
 This e-commerce project was initially developed as part of a course on building full-stack applications with Angular and Spring Boot. It has been further extended and customized by me to deepen my understanding of full-stack web development.
 
 Link:  https://www.udemy.com/course/full-stack-angular-spring-boot-tutorial/

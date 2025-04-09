@@ -1,7 +1,8 @@
 # E-Commerce Angular + Spring Boot
 
 ## Project Description
-An e-commerce application using Angular (frontend) and Spring Boot (backend). The project enables users to browse products, manage their cart, and complete orders.
+An e-commerce application using Angular (frontend) and Spring Boot (backend). The project enables users to browse products, manage their cart, and complete orders.  
+Authentication is handled via Okta (OIDC) for secure login and protected member pages.
 
 ## Features
 - Product listing with category-based browsing
@@ -9,7 +10,7 @@ An e-commerce application using Angular (frontend) and Spring Boot (backend). Th
 - Product search functionality
 - Shopping cart management
 - Checkout and order placement
-- User authentication and registration
+- User authentication and registration (via Okta)
 - Member-only access pages
 
 ## Technologies
@@ -121,10 +122,10 @@ ng generate interface directory/interface-name
    - Grant types: Authorization Code + PKCE
 4. Save the Client ID and Issuer URL
 5. Add a user under Directory > People > Add Person
-   - First Name: Bartek
-   - Last Name: Testowy
-   - Email/Username: BarTest@sample.com
-   - Password: testUser@123 (set by admin)
+   - First Name: Nowy
+   - Last Name: Test
+   - Email/Username: test@nowy.com
+   - Password: Now_Acc@@123 (set by admin)
 6. In your Angular project, install dependencies: okta-auth-js and okta-angular
 7. Add your Okta credentials (Client ID, Issuer, Redirect URI) to the app configuration
 8. Add routes for /login and /login/callback
@@ -132,8 +133,8 @@ ng generate interface directory/interface-name
 10. Run the app and test login with the user BarTest@mail.com
 
 **Login credentials:**
-- **Username:** BarTest@sample.com
-- **Password:** testUser@12345!
+- **Username:** test@nowy.com
+- **Password:** Now_Acc@@123
 
 This e-commerce project was initially developed as part of a course on building full-stack applications with Angular and Spring Boot. It has been further extended and customized by me to deepen my understanding of full-stack web development.
 

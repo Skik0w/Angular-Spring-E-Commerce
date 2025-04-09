@@ -36,16 +36,34 @@ An e-commerce application using Angular (frontend) and Spring Boot (backend). Th
 
 This setup ensures a fully functional Angular and Spring Boot-based e-commerce application.
 
-## Installing Angular CLI
+## Installing Frontend Dependencies
 
-### Installing Angular CLI (Global Installation, Specific Version)
-```
+Use the following commands to install all required frontend libraries:
+
+```bash
+# Angular CLI (specific version, global install)
 npm install --location=global @angular/cli@19.2.1
-```
 
-### Verifying Angular CLI Installation
-```
-ng version
+# Bootstrap 5
+npm install bootstrap@5.3.3
+
+# FontAwesome
+npm install @fortawesome/fontawesome-free
+
+# ng-bootstrap (Bootstrap components for Angular)
+npm install @ng-bootstrap/ng-bootstrap@18.0.0
+
+# Okta Sign-In Widget
+npm install @okta/okta-signin-widget@7.30.1
+
+# Okta Angular SDK
+npm install @okta/okta-angular@6.5.1
+
+# Okta Auth JS (core auth client)
+npm install @okta/okta-auth-js@7.11.3
+
+# Angular Localization Support
+ng add @angular/localize
 ```
 
 ## Creating a New Angular Project
@@ -72,7 +90,7 @@ ng serve
 ng serve --open
 ```
 
-## Generating Components and Classes in Angular
+## Generating Components, Classes, and Interfaces in Angular
 
 ### Generating a New Component
 ```
@@ -84,26 +102,40 @@ ng generate component component-name
 ng generate class directory/class-name
 ```
 
-## Adding Bootstrap and FontAwesome to Angular Project
-
-### Installing Bootstrap 5.3.3
+### Generating a New Interface in a Specific Directory
 ```
-npm install bootstrap@5.3.3
-```
-
-### Installing FontAwesome
-```
-npm install @fortawesome/fontawesome-free
-```
-
-### Installing ng-bootstrap
-```
-npm install @ng-bootstrap/ng-bootstrap@18.0.0
-```
-
-## Adding Angular Localization Support
-```
-ng add @angular/localize
+ng generate interface directory/interface-name
 ```
 
 ---
+
+# Okta Login Configuration
+
+1. Create an account on Okta: https://developer.okta.com/signup
+2. Log in to the Okta Admin Console
+3. Go to Applications > Create App Integration
+   - Type: OIDC - OpenID Connect
+   - Application: Single Page Application
+   - Redirect URI: http://localhost:4200/login/callback
+   - Logout URI: http://localhost:4200
+   - Grant types: Authorization Code + PKCE
+4. Save the Client ID and Issuer URL
+5. Add a user under Directory > People > Add Person
+   - First Name: Bartek
+   - Last Name: Testowy
+   - Email/Username: BarTest@sample.com
+   - Password: testUser@123 (set by admin)
+6. In your Angular project, install dependencies: okta-auth-js and okta-angular
+7. Add your Okta credentials (Client ID, Issuer, Redirect URI) to the app configuration
+8. Add routes for /login and /login/callback
+9. Add a login and loginStatus component
+10. Run the app and test login with the user BarTest@mail.com
+
+**Login credentials:**
+- **Username:** BarTest@sample.com
+- **Password:** testUser@12345!
+
+This e-commerce project was initially developed as part of a course on building full-stack applications with Angular and Spring Boot. It has been further extended and customized by me to deepen my understanding of full-stack web development.
+
+Link:  https://www.udemy.com/course/full-stack-angular-spring-boot-tutorial/
+

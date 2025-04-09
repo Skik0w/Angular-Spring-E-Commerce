@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@okta/okta-angular": "^6.5.1",
+    "@okta/okta-signin-widget": "^7.30.1"
+  }
+}

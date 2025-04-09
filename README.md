@@ -129,7 +129,7 @@ ng generate interface directory/interface-name
 10. Run the app and test login with the user BarTest@mail.com
 
 **Login credentials:**
-- **Username:** BarTest@mail.com
+- **Username:** BarTest@sample.com
 - **Password:** testUser@12345
 
 This e-commerce project was initially developed as part of a course on building full-stack applications with Angular and Spring Boot. It has been further extended and customized by me to deepen my understanding of full-stack web development.
